@@ -1,0 +1,43 @@
+#popular{
+  padding: 60px 0;
+  background: #3c3f41;
+  .text{
+    font-size: 40px;
+    color: #FFFF;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .popular{
+      display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    &--btn{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      &__back{
+        background: #cb2727;
+        border:1px solid #cb2727;
+      }
+      &__next{
+        background: #278a27;
+        border: 1px solid #278a27;
+      }
+      h4{
+        font-size: 28px;
+      }
+      button{
+        padding: 10px 23px;
+        color: white;
+        font-size: 18px;
+        transition: .5s;
+        border-radius: 8px;
+        outline: none;
+      }
+    }
+
+  }
+}
