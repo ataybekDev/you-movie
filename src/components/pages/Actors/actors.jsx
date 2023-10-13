@@ -4,6 +4,7 @@ import axios from "axios";
 import {API_KEY} from "../../../API";
 import UserImg from "../../img/user.png"
 import Slider from "react-slick";
+import {Link} from "react-router-dom";
 
 const Actors = ({id}
 ) => {
@@ -39,15 +40,20 @@ const Actors = ({id}
                 <div className="actors">
                     <h1>Actors</h1>
                     <div className="actors--title">
+
                         <Slider {...settings}>
+
                         {
                             actors.map(el =>(
                                 <div className="actors--title__imges">
-                                    <img src={`https://www.themoviedb.org/t/p/w375_and_h375_face/${el.profile_path}`} alt="img"/>
-                                    <h1>{el.name}</h1>
+                                    <Link to={`/ActorDetall/${el.id}`}>
+                                        <img src={`https://www.themoviedb.org/t/p/w375_and_h375_face/${el.profile_path}`} alt="img"/>
+                                        <h1>{el.name}</h1>
+                                    </Link>
                                 </div>
                             ))
                         }
+
                         </Slider>
                     </div>
 
