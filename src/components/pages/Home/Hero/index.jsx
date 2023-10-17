@@ -28,13 +28,13 @@ const Hero = ({personId}) => {
                     <div className="slaider">
                         <img src={`https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/iIvQnZyzgx9TkbrOgcXx0p7aLiq.jpg`} alt="img"/>
                     </div>
-                    <div>
+                    <div className="slaider">
                         <img src={`https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/1syW9SNna38rSl9fnXwc9fP7POW.jpg`} alt="img"/>
                     </div>
-                    <div>
+                    <div className="slaider">
                         <img src={`https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/5mzr6JZbrqnqD8rCEvPhuCE5Fw2.jpg`} alt="img"/>
                     </div>
-                    <div>
+                    <div className="slaider">
                         <img src={`https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/5mzr6JZbrqnqD8rCEvPhuCE5Fw2.jpg`} alt="img"/>
                     </div>
                 </Slider>

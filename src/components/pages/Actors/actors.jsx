@@ -21,17 +21,16 @@ const Actors = ({id}
         slidesToShow: 4,
         speed: 500
     };
-    const User = (img) =>{
-        actors.filter(el => {
-            if (el.profile_path === false){
-                <img src={img} alt=""/>
-            }
+    const User = () =>{
+        actors?.map(el => {
+            <img src={`https://www.themoviedb.org/t/p/w375_and_h375_face/${el.profile_path}`} alt="img"/>
+
         })
     }
 
     useEffect(() =>{
         getActors(API_KEY)
-        User(UserImg)
+
     },[])
 
     return (
