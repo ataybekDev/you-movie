@@ -10,6 +10,7 @@ import { AiFillStar } from 'react-icons/ai';
 import { BiSolidRightArrow } from 'react-icons/bi';
 import Actors from "../Actors/actors";
 import Trailer from "../../Trailer";
+import ActorMovies from "../ActorDetall/ActorMovies";
 
 
 const DetallPages = () => {
@@ -56,6 +57,7 @@ const DetallPages = () => {
                                 <h1 onClick={() => setModal(handleLide)}><BiCalendarX/></h1>
                             </div>
                         </div>
+
                         <div className="detall--title">
                             <div className="detall--title__one">
                                 <h1>{detall.title}</h1>
@@ -99,6 +101,7 @@ const DetallPages = () => {
             </section>
             <Actors id={movieId}/>
             <Trailer id={movieId}/>
+
         </>
     );
 };

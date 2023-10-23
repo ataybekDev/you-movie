@@ -1,6 +1,6 @@
 @import "components/Header/index";
 @import "components/pages/Home/index";
-@import "components/Hero/index";
+@import "components/pages/Home/Hero/hero";
 @import "components/Popular/index";
 @import "components/TopRated/index";
 @import "components/MovieCard/index";
@@ -8,7 +8,13 @@
 @import "components/pages/Actors/index";
 @import "components/pages/ActorDetall/index";
 @import "components/pages/Home/Hero/hero";
+@import "components/pages/Home/Telefizor/telefizor";
+@import "components/pages/Home/Telefon/telefon";
+@import "components/pages/Home/Children/children";
+@import "components/pages/Home/Desectop/desectop";
+@import "components/pages/ActorDetall/ActorMovies/index";
 @import "components/Trailer/index";
+@import "components/Footer/footer";
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;1,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Tenor+Sans&display=swap');
 
 

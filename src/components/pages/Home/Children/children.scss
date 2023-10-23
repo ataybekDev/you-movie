@@ -1,0 +1,24 @@
+#children{
+  background: #000000;
+  padding: 40px 0;
+  .children{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &--title{
+      h1{
+        font-size: 35px;
+        font-weight: 800;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+      }
+      h2{
+        width: 500px;
+        font-size: 22px;
+        font-weight: 600;
+        color: #FFFFFF;
+      }
+    }
+
+  }
+}

@@ -1,6 +1,59 @@
 #hero{
   .slaider{
+    img{
       width: 100%;
-      min-height: 50vh;
+      min-height: 40vh;
+    }
+    color: #FFFFFF;
+
+  }
+  .hero{
+    position: relative;
+    &--title{
+      position: absolute;
+      top: -450px;
+      text-align: center;
+      h1{
+        font-size: 50px;
+        font-weight: 800;
+        color: #FFFFFF;
+      }
+      h2{
+        font-size: 25px;
+        font-weight: 600;
+        color: #FFFFFF;
+        padding: 20px 0;
+      }
+      p{
+        font-size: 22px;
+        font-weight: 500;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+      }
+      &__input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #email{
+        display: flex;
+        align-items: start;
+        padding: 18px 70px;
+        border: #FFFFFF solid 1px;
+        outline: none;
+        border-radius: 10px;
+        background: #2b2b2b;
+         color: #FFFFFF;
+      }
+      #fear{
+        padding: 15px 25px;
+        border-radius: 10px;
+        color: #FFFFFF;
+        background: #d91717;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
   }
 }

@@ -39,9 +39,16 @@ const Hero = ({personId}) => {
                     </div>
                 </Slider>
                 <div className="container">
-
                     <div className="hero">
-
+                        <div className="hero--title">
+                            <h1>Фильмы, сериалы и многое другое без <br/> ограничений</h1>
+                            <h2>Смотрите где угодно. Отменить подписку можно в любое время.</h2>
+                            <p>Готовы смотреть? Введите адрес электронной почты, чтобы оформить или возобновить <br/> подписку.</p>
+                            <div className="hero--title__input">
+                                <input id="email" type="text" placeholder="адрес элоктрнной почта"/>
+                                <button id="fear">Начать смотреть</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -4,6 +4,7 @@ import axios from "axios";
 import {API_KEY} from "../../../API";
 import "./index.scss";
 import {BiLogoFacebookSquare, BiLogoInstagram, BiLogoTelegram, BiLogoTwitter} from "react-icons/bi";
+import ActorMovies from "./ActorMovies";
 
 const ActorDetall = (effect, deps) => {
     const {actorId} = useParams();
@@ -29,12 +30,11 @@ const ActorDetall = (effect, deps) => {
                         <div className="actor-detall--img">
                             <img src={`https://www.themoviedb.org/t/p/w375_and_h375_face/${profile_path}`} alt=""/>
                             <div className="actor-detall--img__icons">
-                                <BiLogoTelegram/>
-                                <BiLogoTwitter/>
-                                <BiLogoInstagram/>
-                                <BiLogoFacebookSquare/>
+                                <div className="actor-detall--img__icons--one">< BiLogoTelegram/></div>
+                                <div className="actor-detall--img__icons--two"><BiLogoTwitter/></div>
+                                <div className="actor-detall--img__icons--there"><BiLogoInstagram/></div>
+                                <div className="actor-detall--img__icons--foo"><BiLogoFacebookSquare/></div>
                             </div>
-
                         </div>
 
                                 <div className="actor-detall--title">
@@ -54,6 +54,7 @@ const ActorDetall = (effect, deps) => {
                     </div>
                 </div>
             </section>
+            <ActorMovies id={actorId}/>
         </>
     );
 };

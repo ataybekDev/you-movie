@@ -1,5 +1,6 @@
 #actor-detall{
   padding: 40px 0;
+  background: #2b2b2b;
   .actor-detall{
     display: flex;
     align-items: center;
@@ -16,6 +17,18 @@
         gap: 40px;
         font-size: 30px;
         font-weight: 700;
+        &--one{
+          color: #0088cc;
+        }
+        &--two{
+          color:#00acee;
+        }
+        &--there{
+          color:red;
+        }
+        &--foo{
+          color:#3b5998;
+        }
       }
     }
     &--title{
@@ -24,30 +37,30 @@
       h1{
         font-size: 25px;
         font-weight: 700;
-        color: #2b2b2b;
+        color: #FFFFFF;
       }
       h3{
         font-size: 22px;
         font-weight: 600;
-        color: black;
+        color: #FFFFFF;
         padding: 20px 0;
         span{
           font-size: 20px;
           font-weight: 600;
-          color: #2b2b2b;
+          color: #FFFFFF;
         }
       }
       h2{
         font-size: 22px;
         font-weight: 600;
-        color: #2b2b2b;
+        color: #FFFFFF;
         padding-bottom: 20px;
       }
       p{
         width: 800px;
         font-size: 16px;
         font-weight: 400;
-        color: #2b2b2b;
+        color: #c0b9b9;
       }
       button{
         color: #216ef5;
