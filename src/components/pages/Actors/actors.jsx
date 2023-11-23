@@ -5,6 +5,7 @@ import {API_KEY} from "../../../API";
 import UserImg from "../../img/user.png"
 import Slider from "react-slick";
 import {Link} from "react-router-dom";
+import "./index.scss";
 
 const Actors = ({id}
 ) => {
@@ -35,9 +36,9 @@ const Actors = ({id}
 
     return (
         <section id="actors">
+            <h1>Actors</h1>
             <div className="container">
                 <div className="actors">
-                    <h1>Actors</h1>
                     <div className="actors--title">
 
                         <Slider {...settings}>

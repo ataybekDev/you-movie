@@ -1,0 +1,60 @@
+
+.movieResult {
+    position: relative;
+    h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.7);
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      &:hover {
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+      }
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+
+    }
+
+  &--btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__one{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &--back{
+        background: #cb2727;
+        border:1px solid #cb2727;
+      }
+      &--next{
+        background: #278a27;
+        border: 1px solid #278a27;
+      }
+      h4{
+        font-size: 28px;
+      }
+      button{
+        padding: 10px 23px;
+        color: white;
+        font-size: 18px;
+        transition: .5s;
+        border-radius: 8px;
+        outline: none;
+      }
+    }
+  }
+}
+

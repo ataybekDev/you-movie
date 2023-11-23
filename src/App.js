@@ -12,6 +12,7 @@ import "./components/TopRated";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "./components/Footer/footer";
+import Search from "./components/pages/Search/search";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path={"/topRated"} element={<TopRated/>}/>
             <Route path={"/moviesPages/:movieId"} element={<DetallPages/>}/>
             <Route path={"/ActorDetall/:actorId"} element={<ActorDetall/>}/>
+            <Route path={"movie/search/:movieName"} element={<Search/>}/>
         </Routes>
         <Footer/>
     </>

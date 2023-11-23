@@ -1,11 +1,16 @@
 import React from 'react';
+import "./index.scss"
+import {NavLink} from "react-router-dom";
 
 const MovieCard = ({el}) => {
     return (
-        <div id="movieCard">
+        <div className="container">
             <div className="movieCard">
-                <img src={`https://image.tmdb.org/t/p/w220_and_h330_face/${el.poster_path}`} alt=""/>
-                <h2>{el.title}</h2>
+                <NavLink to={`movie/search/${el.id}`}>
+                    <img src={`https://image.tmdb.org/t/p/w220_and_h330_face/${el.poster_path}`} alt=""/>
+                </NavLink>
+
+
             </div>
         </div>
     );

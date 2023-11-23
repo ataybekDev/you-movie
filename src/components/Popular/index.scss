@@ -8,36 +8,41 @@
     padding-bottom: 40px;
   }
   .popular{
-      display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
-    &--btn{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-      &__back{
-        background: #cb2727;
-        border:1px solid #cb2727;
-      }
-      &__next{
-        background: #278a27;
-        border: 1px solid #278a27;
-      }
-      h4{
-        font-size: 28px;
-      }
-      button{
-        padding: 10px 23px;
-        color: white;
-        font-size: 18px;
-        transition: .5s;
-        border-radius: 8px;
-        outline: none;
-      }
-    }
-
   }
+  .popularBtn{
+    display: grid;
+    place-items: center;
+    margin: 20px 0;
+     &--one{
+       display: flex;
+       align-items: center;
+       gap: 30px;
+       &__back{
+         background: #cb2727;
+         border:1px solid #cb2727;
+       }
+       &__next{
+         background: #278a27;
+         border: 1px solid #278a27;
+       }
+       h4{
+         font-size: 28px;
+         color: white;
+       }
+       button{
+         padding: 10px 23px;
+         color: white;
+         font-size: 18px;
+         transition: .5s;
+         border-radius: 8px;
+         outline: none;
+       }
+     }
+
+   }
 }
